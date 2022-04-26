@@ -2,7 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-class Students(models.Model):
+class Student(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField()
     email = models.EmailField()
@@ -14,7 +14,7 @@ class Students(models.Model):
         return self.name
 
 
-class Teachers(models.Model):
+class Teacher(models.Model):
     name = models.CharField(max_length=100)
     phone = models.CharField(max_length=11)
     email = models.EmailField()
