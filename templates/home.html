@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, accusantium. </h1>
-<p>{{ x }}</p>
+<p>{{x}}</p>
+
+<h1>
+   <a href="{% url 'new' %}">new</a>
+</h1>
+
 {% endblock %}
